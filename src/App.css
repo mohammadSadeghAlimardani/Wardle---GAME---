@@ -116,6 +116,9 @@ form button {
 .modal-center p {
     font-size: 1.15rem;
 }
+.modal-center span{
+    color : var(--primary-500);
+}
 .modal-center ul {
     display: flex;
     gap: 2rem;
