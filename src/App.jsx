@@ -115,7 +115,7 @@ const App = () => {
 
     return (
         <main>
-            <Modal isWin={isWin} isEnded={isEnded} />
+            <Modal isWin={isWin} isEnded={isEnded} word={word}/>
             <ToastContainer position="top-center" />
             <div className="game">
                 <div className="section-center game-center">
