@@ -5,7 +5,7 @@ import gameOverAudio from "./audios/game-over.mp3";
 import { useEffect, useRef } from "react";
 
 const Modal = (props) => {
-    const { isWin, isEnded } = props;
+    const { isWin, isEnded, word } = props;
 
     const victoryAudioRef = useRef(null);
     const gameOverAudioRef = useRef(null);
@@ -40,7 +40,10 @@ const Modal = (props) => {
                         </ul>
                     </>
                 ) : (
-                    <p>you lost your chances</p>
+                    <>
+<p>you lost your chances</p>
+<span>{word}</span>
+</>
                 )}
                 <audio src={victoryAudio} ref={victoryAudioRef}></audio>
                 <audio src={gameOverAudio} ref={gameOverAudioRef}></audio>
