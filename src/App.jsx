@@ -51,7 +51,7 @@ const App = () => {
 
     const handleInput = (event) => {
         if (event.target.value.length <= 5) {
-            setSearchValue(event.target.value);
+            setSearchValue(event.target.value.toLowerCase());
         }
     };
 
