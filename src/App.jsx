@@ -49,14 +49,14 @@ const App = () => {
         }
     });
 
-    const handleInput = (event) => {
-        if (event.target.value.length <= 5) {
-            setSearchValue(event.target.value.toLowerCase());
-        }
-    };
-
     const submitForm = async (event) => {
         event.preventDefault();
+
+        //searchValue must be 5 chracters
+        if (searchValue.length < 5) {
+            toast.warning("searchValue must be 5 chracters");
+            return;
+        }
 
         //check searchValue in english dictionary (does exists ?)
         try {
@@ -68,12 +68,6 @@ const App = () => {
                 toast.error("This Word Does Not Exists");
                 return;
             }
-        }
-
-        //check if searchValue is empty
-        if (searchValue.length === 0) {
-            toast.error("Please Enter some Value");
-            return;
         }
 
         //check correct characters and display them
@@ -115,7 +109,7 @@ const App = () => {
 
     return (
         <main>
-            <Modal isWin={isWin} isEnded={isEnded} word={word}/>
+            <Modal isWin={isWin} isEnded={isEnded} word={word} />
             <ToastContainer position="top-center" />
             <div className="game">
                 <div className="section-center game-center">
@@ -188,8 +182,11 @@ const App = () => {
                     <form onSubmit={submitForm}>
                         <input
                             value={searchValue}
-                            onChange={handleInput}
+                            onChange={(event) =>
+                                setSearchValue(event.target.value.toLowerCase())
+                            }
                             type="text"
+                            maxLength="5"
                             name="searchValue"
                             ref={inputRef}
                         />
