@@ -182,11 +182,14 @@ const App = () => {
                     <form onSubmit={submitForm}>
                         <input
                             value={searchValue}
-                            onChange={(event) =>
-                                setSearchValue(event.target.value.toLowerCase())
+                            onChange={(event) =>{
+if(event.target.value.length <= 5){
+setSearchValue(event.target.value.toLowerCase())
+}
+}
+                                
                             }
                             type="text"
-                            maxLength="5"
                             name="searchValue"
                             ref={inputRef}
                         />
