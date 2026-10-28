@@ -1,0 +1,527 @@
+/* =========== CSS Reset =========== */
+/* ================================= */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ===================================== */
+/* ===================================== */
+/* =========== Global Styles =========== */
+/* ===================================== */
+/* ===================================== */
+
+:root {
+    --primary-100: #e0f0ff;
+    --primary-200: #b3d8ff;
+    --primary-300: #80bfff;
+    --primary-400: #4da6ff;
+    --primary-500: #007bff; /* base color */
+    --primary-600: #006fe6;
+    --primary-700: #0063cc;
+    --primary-800: #0057b3;
+    --primary-900: #004b99;
+
+    --secondary-100: #f0f1f2;
+    --secondary-200: #d9dbdd;
+    --secondary-300: #c2c5c8;
+    --secondary-400: #abaeb3;
+    --secondary-500: #6c757d; /* base color */
+    --secondary-600: #60666e;
+    --secondary-700: #54595f;
+    --secondary-800: #484d50;
+    --secondary-900: #3c4042;
+
+    --success-100: #e6f4ea;
+    --success-200: #bfe0c8;
+    --success-300: #99cc9f;
+    --success-400: #73b87d;
+    --success-500: #28a745; /* base color */
+    --success-600: #23913d;
+    --success-700: #1e7c36;
+    --success-800: #18672e;
+    --success-900: #135327;
+
+    --danger-100: #ffe6ea;
+    --danger-200: #ffbfc5;
+    --danger-300: #ff99a0;
+    --danger-400: #ff737c;
+    --danger-500: #dc3545; /* base color */
+    --danger-600: #b82e38;
+    --danger-700: #941b2a;
+    --danger-800: #7a1421;
+    --danger-900: #5f0d17;
+
+    --warning-100: #fff9e6;
+    --warning-200: #fff2cc;
+    --warning-300: #ffebb3;
+    --warning-400: #ffe699;
+    --warning-500: #ffc107; /* base color */
+    --warning-600: #e6ad06;
+    --warning-700: #cc9905;
+    --warning-800: #b38604;
+    --warning-900: #997203;
+
+    --info-100: #e1f1f5;
+    --info-200: #b3d9e1;
+    --info-300: #80bfd0;
+    --info-400: #4da5bf;
+    --info-500: #17a2b8; /* base color */
+    --info-600: #148ea0;
+    --info-700: #117a88;
+    --info-800: #0e6570;
+    --info-900: #0a5149;
+
+    --light-100: #ffffff;
+    --light-200: #fcfcfc;
+    --light-300: #f9f9fa;
+    --light-400: #f5f6f7;
+    --light-500: #f8f9fa; /* base color */
+    --light-600: #e9ecef;
+    --light-700: #dee2e6;
+    --light-800: #ced4da;
+    --light-900: #adb5bd;
+
+    --dark-100: #c1c3c6;
+    --dark-200: #a2a5a9;
+    --dark-300: #83878c;
+    --dark-400: #646970;
+    --dark-500: #343a40; /* base color */
+    --dark-600: #2e3237;
+    --dark-700: #282c31;
+    --dark-800: #222528;
+    --dark-900: #1c1f22;
+}
+
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.17rem;
+}
+h4 {
+    font-size: 1rem;
+}
+h5 {
+    font-size: 0.83rem;
+}
+h6 {
+    font-size: 0.67rem;
+}
+
+@media screen and (max-width: 640px) {
+    h2 {
+        font-size: 1.25rem;
+    }
+    h3 {
+        font-size: 1.083rem;
+    }
+    h4 {
+        font-size: 0.87rem;
+    }
+    h5 {
+        font-size: 0.75rem;
+    }
+    h6 {
+        font-size: 0.59rem;
+    }
+    p {
+        font-size: 0.87rem;
+    }
+}
+
+/* =================== */
+/* ======= btn ======= */
+/* =================== */
+
+.btn {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border: none;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btn.btn-primary {
+    background-color: var(--primary-500);
+    color: white;
+}
+.btn.btn-primary:hover {
+    background-color: var(--primary-600);
+}
+
+.btn.btn-secondary {
+    background-color: var(--secondary-500);
+    color: white;
+}
+.btn.btn-secondary:hover {
+    background-color: var(--secondary-600);
+}
+
+.btn.btn-success {
+    background-color: var(--success-500);
+    color: white;
+}
+.btn.btn-success:hover {
+    background-color: var(--success-600);
+}
+
+.btn.btn-danger {
+    background-color: var(--danger-500);
+    color: white;
+}
+.btn.btn-danger:hover {
+    background-color: var(--danger-600);
+}
+
+.btn.btn-warning {
+    background-color: var(--warning-500);
+    color: black;
+}
+.btn.btn-warning:hover {
+    background-color: var(--warning-600);
+}
+
+.btn.btn-info {
+    background-color: var(--info-500);
+    color: white;
+}
+.btn.btn-info:hover {
+    background-color: var(--info-600);
+}
+
+.btn.btn-light {
+    background-color: var(--light-800);
+    color: black;
+}
+.btn.btn-light:hover {
+    background-color: var(--light-900);
+}
+
+.btn.btn-dark {
+    background-color: var(--dark-500);
+    color: white;
+}
+.btn.btn-dark:hover {
+    background-color: var(--dark-600);
+}
+
+/* ==================== */
+/* ======= Link ======= */
+/* ==================== */
+
+.link {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+/* ============================= */
+/* ======== Loading Icon ======= */
+/* ============================= */
+
+.dotted-loading {
+    justify-items: center;
+}
+.dotted-loading > section {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+.dotted-loading > section div {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+.dotted-loading > section .dot-1 {
+    animation: changeColor_dot1 2s linear infinite;
+}
+.dotted-loading > section .dot-2 {
+    animation: changeColor_dot2 2s linear infinite;
+}
+.dotted-loading > section .dot-3 {
+    animation: changeColor_dot3 2s linear infinite;
+}
+
+@keyframes changeColor_dot1 {
+    0% {
+        background-color: #e0e0e0;
+    }
+    8.25% {
+        background-color: #6c6c6c;
+    }
+    16.5% {
+        background-color: #010101;
+    }
+    24.75% {
+        background-color: #6c6c6c;
+    }
+    33% {
+        background-color: #e0e0e0;
+    }
+    100% {
+        background-color: #e0e0e0;
+    }
+}
+@keyframes changeColor_dot2 {
+    0% {
+        background-color: #e0e0e0;
+    }
+    33% {
+        background-color: #e0e0e0;
+    }
+    41.25% {
+        background-color: #6c6c6c;
+    }
+    49.5% {
+        background-color: #010101;
+    }
+    57.75% {
+        background-color: #6c6c6c;
+    }
+    66% {
+        background-color: #e0e0e0;
+    }
+    100% {
+        background-color: #e0e0e0;
+    }
+}
+@keyframes changeColor_dot3 {
+    0% {
+        background-color: #e0e0e0;
+    }
+    66% {
+        background-color: #e0e0e0;
+    }
+    74.25% {
+        background-color: #6c6c6c;
+    }
+    82.5% {
+        background-color: #010101;
+    }
+    90.75% {
+        background-color: #6c6c6c;
+    }
+    100% {
+        background-color: #e0e0e0;
+    }
+}
+
+/*
+<div className="dotted-loading">
+    <section>
+        <div className="dot-1"></div>
+        <div className="dot-2"></div>
+        <div className="dot-3"></div>
+    </section>
+</div>
+*/
+
+/* ======================== */
+/* ====== Grid System ===== */
+/* ======================== */
+
+.section-center {
+    width: 92.5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.col {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 0.75rem;
+}
+.col-1 {
+    grid-template-columns: 1fr;
+}
+.col-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.col-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (max-width: 1280px) {
+    .col {
+        max-width: 840px;
+    }
+    .col-4 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .col-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .col-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .col-1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 992px) {
+    .col {
+        max-width: 640px;
+    }
+    .col-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .col-3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .col-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .col-1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+    .col {
+        max-width: 480px;
+    }
+    .col-4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .col-3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .col-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .col-1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
