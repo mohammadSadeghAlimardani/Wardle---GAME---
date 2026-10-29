@@ -1,26 +1,66 @@
 const chars = [
     {
-        letter: "a",
+        letter: "q",
         isUsed: false,
         isCorrect: null,
     },
     {
-        letter: "b",
-        isUsed: false,
-        isCorrect: null,
-    },
-    {
-        letter: "c",
-        isUsed: false,
-        isCorrect: null,
-    },
-    {
-        letter: "d",
+        letter: "w",
         isUsed: false,
         isCorrect: null,
     },
     {
         letter: "e",
+        isUsed: false,
+        isCorrect: null,
+    },
+    {
+        letter: "r",
+        isUsed: false,
+        isCorrect: null,
+    },
+    {
+        letter: "t",
+        isUsed: false,
+        isCorrect: null,
+    },
+    {
+        letter: "y",
+        isUsed: false,
+        isCorrect: null,
+    },
+    {
+        letter: "u",
+        isUsed: false,
+        isCorrect: null,
+    },
+    {
+        letter: "i",
+        isUsed: false,
+        isCorrect: null,
+    },
+    {
+        letter: "o",
+        isUsed: false,
+        isCorrect: null,
+    },
+    {
+        letter: "p",
+        isUsed: false,
+        isCorrect: null,
+    },
+    {
+        letter: "a",
+        isUsed: false,
+        isCorrect: null,
+    },
+    {
+        letter: "s",
+        isUsed: false,
+        isCorrect: null,
+    },
+    {
+        letter: "d",
         isUsed: false,
         isCorrect: null,
     },
@@ -40,11 +80,6 @@ const chars = [
         isCorrect: null,
     },
     {
-        letter: "i",
-        isUsed: false,
-        isCorrect: null,
-    },
-    {
         letter: "j",
         isUsed: false,
         isCorrect: null,
@@ -60,57 +95,12 @@ const chars = [
         isCorrect: null,
     },
     {
-        letter: "m",
+        letter: "z",
         isUsed: false,
         isCorrect: null,
     },
     {
-        letter: "n",
-        isUsed: false,
-        isCorrect: null,
-    },
-    {
-        letter: "o",
-        isUsed: false,
-        isCorrect: null,
-    },
-    {
-        letter: "p",
-        isUsed: false,
-        isCorrect: null,
-    },
-    {
-        letter: "q",
-        isUsed: false,
-        isCorrect: null,
-    },
-    {
-        letter: "r",
-        isUsed: false,
-        isCorrect: null,
-    },
-    {
-        letter: "s",
-        isUsed: false,
-        isCorrect: null,
-    },
-    {
-        letter: "t",
-        isUsed: false,
-        isCorrect: null,
-    },
-    {
-        letter: "u",
-        isUsed: false,
-        isCorrect: null,
-    },
-    {
-        letter: "v",
-        isUsed: false,
-        isCorrect: null,
-    },
-    {
-        letter: "w",
+        letter: "enter",
         isUsed: false,
         isCorrect: null,
     },
@@ -120,17 +110,27 @@ const chars = [
         isCorrect: null,
     },
     {
-        letter: "y",
+        letter: "c",
         isUsed: false,
         isCorrect: null,
     },
     {
-        letter: "z",
+        letter: "v",
         isUsed: false,
         isCorrect: null,
     },
     {
-        letter: "enter",
+        letter: "b",
+        isUsed: false,
+        isCorrect: null,
+    },
+    {
+        letter: "n",
+        isUsed: false,
+        isCorrect: null,
+    },
+    {
+        letter: "m",
         isUsed: false,
         isCorrect: null,
     },

@@ -35,6 +35,7 @@ html {
     width: 3rem;
     height: 3rem;
     box-shadow: 0 0 1px 2px #d3d6d9;
+    font-weight: 600;
 }
 .single-chance .box.correct {
     background-color: #78a86b;
@@ -59,10 +60,11 @@ html {
 }
 .alphabet-letters .letter-btn {
     background-color: #d3d5d9;
-    padding: 1rem 0.75rem;
+    padding: 1rem 0.675rem;
     border-radius: 0.5rem;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 0.87rem;
 }
 
 .alphabet-letters .letter-btn.correct-btn {
